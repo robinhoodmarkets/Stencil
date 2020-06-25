@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.2
 import PackageDescription
 
 let package = Package(
@@ -7,7 +7,7 @@ let package = Package(
     .library(name: "Stencil", targets: ["Stencil"])
   ],
   dependencies: [
-    .package(url: "https://github.com/kylef/PathKit.git", from: "0.9.0"),
+    .package(url: "https://github.com/kylef/PathKit.git", from: "1.0.0"),
     .package(url: "https://github.com/kylef/Spectre.git", from: "0.9.0")
   ],
   targets: [
@@ -19,5 +19,5 @@ let package = Package(
       "Spectre"
     ])
   ],
-  swiftLanguageVersions: [.v4_2]
+  swiftLanguageVersions: [.v5]
 )
